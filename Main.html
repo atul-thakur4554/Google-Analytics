@@ -10,7 +10,7 @@
 
 <script> 
 
-function GEEKFORGEEKS()                                    
+function validateForm()                                    
 
 { 
 
@@ -102,7 +102,15 @@ function GEEKFORGEEKS()
 
     return true; 
 
-}</script> 
+}
+	 function submitForm(){
+            if(validateForm()){
+                window.open('./image.html', '_self');
+            }
+            return false;
+        }
+	
+</script> 
 
 </head>
 
@@ -110,7 +118,7 @@ function GEEKFORGEEKS()
 
 <h1 style="text-align: center"> REGISTRATION FORM </h1>           
 
-<form name="RegForm" action="image.html" onsubmit="return GEEKFORGEEKS()" method="post">  
+<form name="RegForm" action="image.html" onsubmit="return submitForm()" method="post">  
 
       
 
